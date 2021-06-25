@@ -2,3 +2,125 @@
    width: 200px;
    height: auto;
 }
+
+/* nav bar */
+
+.header {
+   height: 40px;
+   background-color: #56CCF2;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 300;
+}
+
+.pageTitle {
+   float: left;
+   padding: 10px 20px;
+}
+
+nav {
+   display: flex;
+   padding: 10px 20px;
+   justify-content: flex-end;
+}
+
+.navitem {
+   padding: 0px 20px;
+}
+
+body {
+   margin: 0;
+}
+
+/* main title */
+
+.title {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 24px;
+}
+
+/* recipe cards */
+
+.recipeContainer {
+   margin: 24px;
+   padding: 0 20px;
+}
+
+.recipe {
+   display: flex;
+   border: 1px solid lightgray;
+   margin: 0 15px 15px 0;
+}
+
+.recipeBox {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#alignBox {
+   align-self: auto;
+}
+
+.recipeContent {
+   margin: 24px;
+   max-width: 300px;
+}
+
+.recipeDirections {
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 20px;
+}
+
+/* buttons */
+
+button {
+   background-color: #F2C94C;
+   width: 100%;
+   font-size: 14px;
+   text-transform: uppercase;
+   border-radius: 8px;
+   border: 0;
+   height: 30px;
+   margin-top: 24px;
+}
+
+button a {
+   color: black;
+   text-decoration: none;
+   padding: 0 8px;
+   letter-spacing: 1px;
+}
+
+/* footer */
+
+.footer {
+   height: 50px;
+   background-color: #E3F9FF;
+   text-transform: none ;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 300;
+}
+
+.copyright {
+   margin: auto;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   font-size: 12px;
+   letter-spacing: 0.5px;
+}
+
+.linkFaH a {
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+/* Changes columns to row when the screen size is smaller than 1000px */
+@media only screen and (min-width: 1000px) {
+   .recipeBox {
+      flex-direction: row;
+   }
+}
